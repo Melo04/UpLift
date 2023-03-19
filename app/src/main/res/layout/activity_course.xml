@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".course">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/arrowBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:onClick="callEduPage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Course Details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:flow_horizontalAlign="center"
+                app:flow_verticalAlign="center"
+                app:layout_constraintEnd_toEndOf="@+id/imageView23"
+                app:layout_constraintStart_toStartOf="@+id/arrowBack"
+                app:layout_constraintTop_toTopOf="@+id/arrowBack" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView23"
+                app:layout_constraintTop_toTopOf="@+id/course"
+                app:srcCompat="@drawable/ic_bx_share_alt_1" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView14"
+                app:srcCompat="@drawable/ic_rectangle_344" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/picFood"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/icon_background"
+                android:backgroundTint="#E0E0E0"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/burger"
+                app:layout_constraintEnd_toEndOf="@+id/course"
+                app:layout_constraintStart_toStartOf="@+id/course"
+                app:layout_constraintTop_toBottomOf="@+id/course"
+                app:riv_corner_radius="10dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_paaji"
+                android:text="UI/UX Designer"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/teacher"
+                app:layout_constraintEnd_toEndOf="@+id/picFood"
+                app:layout_constraintStart_toStartOf="@+id/picFood"
+                app:layout_constraintTop_toBottomOf="@+id/picFood" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_alignStart="@+id/title"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/teacher"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView24"
+                android:layout_alignBottom="@+id/imageView24"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView24"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Robertus"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+                app:layout_constraintStart_toEndOf="@+id/imageView24"
+                app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/teacher"
+                android:layout_alignBottom="@+id/teacher"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/teacher"
+                android:src="@drawable/ic_video"
+                app:layout_constraintBottom_toBottomOf="@+id/total"
+                app:layout_constraintStart_toEndOf="@+id/teacher"
+                app:layout_constraintTop_toTopOf="@+id/total" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView24"
+                android:layout_alignBottom="@+id/imageView25"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="60dp"
+                android:layout_toEndOf="@+id/imageView25"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Robertus"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+            <ImageView
+                android:id="@+id/startIcon"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_alignStart="@+id/title"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_star_24"
+                app:layout_constraintStart_toStartOf="@+id/picFood"
+                app:layout_constraintTop_toBottomOf="@+id/teacher" />
+
+            <TextView
+                android:id="@+id/ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView24"
+                android:layout_alignBottom="@+id/imageView24"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView24"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Robertus"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/startIcon"
+                app:layout_constraintEnd_toEndOf="@+id/picFood"
+                app:layout_constraintStart_toEndOf="@+id/startIcon"
+                app:layout_constraintTop_toTopOf="@+id/startIcon" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                android:textColor="#091020"
+                android:layout_marginTop="12dp"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="@+id/title"
+                app:layout_constraintStart_toEndOf="@+id/startIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ratings" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/cvbg"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginRight="-20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="380dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/investment" />
+
+                    <TextView
+                        android:id="@+id/lesson1"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Investment"
+                        android:textColor="#d703082b"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/p2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lesson1"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="15dp"
+                        android:text="4 hours, 12 lessons"
+                        android:textColor="#6003082b"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/l1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toEndOf="@+id/lesson1"
+                        android:layout_toRightOf="@id/p2"
+                        android:src="@drawable/play_button" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="380dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/investment" />
+
+                    <TextView
+                        android:id="@+id/lesson2"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Investment"
+                        android:textColor="#d703082b"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/p3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lesson2"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="15dp"
+                        android:text="4 hours, 12 lessons"
+                        android:textColor="#6003082b"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/l2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@+id/lesson2"
+                        android:layout_toRightOf="@id/p3"
+                        android:src="@drawable/play_button" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="380dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/investment" />
+
+                    <TextView
+                        android:id="@+id/lesson3"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Investment"
+                        android:textColor="#d703082b"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/p4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lesson3"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="15dp"
+                        android:text="4 hours, 12 lessons"
+                        android:textColor="#6003082b"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/l3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@+id/lesson3"
+                        android:layout_toRightOf="@id/p4"
+                        android:src="@drawable/play_button" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="380dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/investment" />
+
+                    <TextView
+                        android:id="@+id/lesson4"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Investment"
+                        android:textColor="#d703082b"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/p5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lesson4"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="15dp"
+                        android:text="4 hours, 12 lessons"
+                        android:textColor="#6003082b"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/l4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@+id/lesson4"
+                        android:layout_toRightOf="@id/p5"
+                        android:src="@drawable/play_button" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="380dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/investment" />
+
+                    <TextView
+                        android:id="@+id/lesson5"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Investment"
+                        android:textColor="#d703082b"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/p6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lesson5"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="15dp"
+                        android:text="4 hours, 12 lessons"
+                        android:textColor="#6003082b"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/l5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@+id/lesson5"
+                        android:layout_toRightOf="@id/p6"
+                        android:src="@drawable/play_button" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="380dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/investment" />
+
+                    <TextView
+                        android:id="@+id/lesson6"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Investment"
+                        android:textColor="#d703082b"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/p7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lesson6"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="15dp"
+                        android:text="4 hours, 12 lessons"
+                        android:textColor="#6003082b"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/l6"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@+id/lesson6"
+                        android:layout_toRightOf="@id/p7"
+                        android:src="@drawable/play_button" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/enrollButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_background"
+        android:backgroundTint="#0019FF"
+        android:text="ENROLL NOW"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:onClick="callEnrollPage"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

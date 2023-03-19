@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/autour_one</item>
+        <item>@font/baloo_paaji</item>
+        <item>@font/bungee</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/poppins_thin</item>
+        <item>@font/source_code_pro_bold</item>
+    </array>
+</resources>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".DetailsActivity4">
+
+    <ScrollView
+        android:id="@+id/scrollView10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp">
+
+            <ImageView
+                android:id="@+id/arrowBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:onClick="callJobsPage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Job Details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:flow_horizontalAlign="center"
+                app:flow_verticalAlign="center"
+                app:layout_constraintEnd_toEndOf="@+id/imageView23"
+                app:layout_constraintStart_toStartOf="@+id/arrowBack"
+                app:layout_constraintTop_toTopOf="@+id/arrowBack" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/area"
+        app:srcCompat="@drawable/ic_bx_share_alt_1" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/ic_rectangle_344" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/picFood"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/icon_background"
+        android:backgroundTint="#E0E0E0"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/burger"
+        app:layout_constraintEnd_toEndOf="@+id/area"
+        app:layout_constraintStart_toStartOf="@+id/area"
+        app:layout_constraintTop_toBottomOf="@+id/area"
+        app:riv_corner_radius="10dp" />
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_money"
+                android:padding="10dp"
+                android:background="@drawable/icon_background2"
+                android:backgroundTint="#dce5eb"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/salaryTxt"
+                app:layout_constraintEnd_toEndOf="@+id/salaryTxt"
+                app:layout_constraintStart_toStartOf="@+id/salaryTxt"
+                app:layout_constraintTop_toBottomOf="@+id/locationTxt" />
+
+            <TextView
+                android:id="@+id/salaryTxt"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="RM 6k+"
+                android:textColor="#272670"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/textView26"
+                app:layout_constraintEnd_toStartOf="@+id/addressTxt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/addressTxt" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_time"
+                android:padding="10dp"
+                android:background="@drawable/icon_background2"
+                android:backgroundTint="#dce5eb"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/addressTxt"
+                app:layout_constraintEnd_toEndOf="@+id/addressTxt"
+                app:layout_constraintStart_toStartOf="@+id/addressTxt"
+                app:layout_constraintTop_toBottomOf="@+id/locationTxt" />
+
+            <TextView
+                android:id="@+id/addressTxt"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Full Time"
+                android:gravity="center"
+                android:textColor="#272670"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/salaryTxt"
+                app:layout_constraintEnd_toStartOf="@+id/areaTxt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/salaryTxt"
+                app:layout_constraintTop_toBottomOf="@id/locationTxt" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iconLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_location2"
+                android:padding="10dp"
+                android:background="@drawable/icon_background2"
+                android:backgroundTint="#dce5eb"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/areaTxt"
+                app:layout_constraintEnd_toEndOf="@+id/areaTxt"
+                app:layout_constraintStart_toStartOf="@+id/areaTxt"
+                app:layout_constraintTop_toBottomOf="@+id/locationTxt" />
+
+            <TextView
+                android:id="@+id/areaTxt"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Cheras"
+                android:textColor="#272670"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/addressTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/addressTxt"
+                app:layout_constraintTop_toTopOf="@+id/addressTxt" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Salary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="@+id/salaryTxt"
+        app:layout_constraintStart_toStartOf="@+id/salaryTxt"
+        app:layout_constraintTop_toBottomOf="@+id/addressTxt" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Job Time"
+        app:layout_constraintEnd_toEndOf="@+id/addressTxt"
+        app:layout_constraintStart_toStartOf="@+id/addressTxt"
+        app:layout_constraintTop_toBottomOf="@+id/addressTxt" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Location"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/areaTxt"
+        app:layout_constraintStart_toStartOf="@+id/areaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/areaTxt" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_paaji"
+        android:text="UI/UX Designer"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/locationTxt"
+        app:layout_constraintEnd_toEndOf="@+id/picFood"
+        app:layout_constraintStart_toStartOf="@+id/picFood"
+        app:layout_constraintTop_toBottomOf="@+id/picFood" />
+
+    <TextView
+        android:id="@+id/locationTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Google LLC, Cheras, Petaling Jaya"
+        android:textColor="#595959"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/addressTxt"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/requirementsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Requirements"
+                android:textColor="#091020"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/requirement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="• Proficient in Bahasa Malaysia\n• Able to commit at least 2 hours a day\n• Willing to teach the kids\n• Lorem ipsum dolor sit amet, consectetur adipiscing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requirementsTxt" />
+
+            <TextView
+                android:id="@+id/Responsibilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Responsibilities"
+                android:textColor="#091020"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/requirement"
+                app:layout_constraintTop_toBottomOf="@+id/requirement" />
+
+    <TextView
+        android:id="@+id/benefitsTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="• Lorem ipsum dolor sit amet, consectetur adipiscing\n• Lorem ipsum dolor sit amet, consectetur\n• Lorem ipsum dolor sit amet, consectetur adipiscing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Responsibilities" />
+
+        <TextView
+            android:id="@+id/descriptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Descriptions"
+            android:textColor="#091020"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/requirement"
+            app:layout_constraintTop_toBottomOf="@+id/benefitsTxt" />
+
+        <TextView
+            android:id="@+id/descriptionsTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptions" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Contact"
+                android:textColor="#091020"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/requirement"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionsTxt" />
+
+            <TextView
+                android:id="@+id/contactTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginBottom="80dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="• 012-3456789 | Park Seo Jun - Human Resource Director\n• 012-3456789 | Lee Jong Suk - Marketing Director"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/applyNowButton"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/icon_background"
+        android:backgroundTint="#393939"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:onClick="callApplyPage"
+        android:padding="8dp"
+        android:text="APPLY NOW"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bookmark"
+        app:layout_constraintStart_toStartOf="@+id/scrollView10" />
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/icon_background"
+        android:backgroundTint="#33E300"
+        android:padding="7dp"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="@+id/applyNowButton"
+        app:layout_constraintEnd_toEndOf="@id/scrollView10"
+        app:layout_constraintStart_toEndOf="@+id/applyNowButton"
+        app:layout_constraintTop_toTopOf="@+id/applyNowButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

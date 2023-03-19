@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D8FDF9">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="355dp"
+                    android:layout_height="314dp"
+                    android:layout_marginTop="80dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bg" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="409dp"
+                    android:layout_height="395dp"
+                    android:background="#CCFFFFFF"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginTop="330dp"
+                    tools:layout_editor_absoluteX="2dp"/>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="290dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/button_background"
+                    android:text="Get Started Now"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="287dp"
+                    android:layout_height="104dp"
+                    android:fontFamily="@font/baloo_paaji"
+                    android:text="Making The World A better place"
+                    android:textAlignment="center"
+                    android:textColor="#0141FF"
+                    android:textSize="30sp"
+                    android:layout_marginTop="350dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="340dp"
+                    android:layout_height="52dp"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="460dp"
+                    android:text="Donate now and contribute your money to help others in need"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="400dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/button_background"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginRight="20dp"
+                        tools:layout_editor_absoluteX="236dp"
+                        tools:layout_editor_absoluteY="579dp" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/button_background"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginRight="20dp"
+                        tools:layout_editor_absoluteX="185dp"
+                        tools:layout_editor_absoluteY="579dp" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/button_background"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="128dp"
+                        tools:layout_editor_absoluteY="579dp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

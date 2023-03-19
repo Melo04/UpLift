@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Skills">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/apply_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:onClick="callBackPage"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKILLS &amp;\nEXPERTISE"
+            android:fontFamily="@font/bungee"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textAllCaps="true"/>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_marginTop="-130dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:src="@drawable/b40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pick the skills and expertise that suits you the most, this could help to stand out among others. Feel free to choose as many as you can."
+            android:textSize="15sp"
+            android:transitionName="logo_desc" />
+
+        <CheckBox
+            android:id="@+id/cooking_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:buttonTint="#000EFF"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Cooking" />
+
+        <CheckBox
+            android:id="@+id/driving_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:buttonTint="#000EFF"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Driving" />
+
+        <CheckBox
+            android:id="@+id/Bilingualism_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text="Bilingualism\n(Able to speak multiple languages)" />
+
+        <CheckBox
+            android:id="@+id/childcare_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Childcare" />
+
+        <CheckBox
+            android:id="@+id/air_conditioning_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Air Conditioning Repair" />
+
+        <CheckBox
+            android:id="@+id/customer_service_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Customer Service" />
+
+        <CheckBox
+            android:id="@+id/food_delivery_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Food Delivery" />
+
+        <CheckBox
+            android:id="@+id/manual_labour_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Manual Labour\n(Carpentry / Plumbing / Electrical)" />
+
+        <CheckBox
+            android:id="@+id/communication_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Communication Skills" />
+
+        <CheckBox
+            android:id="@+id/technical_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000EFF"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text = "Basic computer skills" />
+
+        <CheckBox
+            android:id="@+id/eldercare_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Eldercare" />
+
+        <CheckBox
+            android:id="@+id/food_service_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Food Service" />
+
+        <CheckBox
+            android:id="@+id/graphic_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Graphic Design" />
+
+        <CheckBox
+            android:id="@+id/health_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Health and Wellness" />
+
+        <CheckBox
+            android:id="@+id/writing_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Writing and Editing" />
+
+        <CheckBox
+            android:id="@+id/sewing_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:buttonTint="#000EFF"
+            android:text = "Sewing or garment making" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:onClick="callContinuePage"
+            android:text="Continue" />
+
+    </LinearLayout>
+</ScrollView>

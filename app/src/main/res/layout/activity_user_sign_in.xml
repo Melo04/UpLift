@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".userSignIn"
+        android:padding="30dp"
+        android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE AN \nACCOUNT"
+                android:fontFamily="@font/bungee"
+                android:textSize="40sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/black"
+                android:textAllCaps="true"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toEndOf="@id/createAccount"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_arrowright" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:textColor="#535353"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Verify your identity below"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/createAccount"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:background="@drawable/button_bg"
+            android:layout_height="wrap_content"
+            android:onClick="callRetailerPage"
+            android:textAlignment="textEnd">
+
+            <TextView
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Underserved /\nUnderpriviledge \nCommunities"
+                android:fontFamily="@font/baloo_paaji"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:padding="5dp"
+                android:src="@drawable/b40"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:background="@drawable/button_bg"
+            android:layout_height="wrap_content"
+            android:onClick="callRetailerPage"
+            android:textAlignment="textEnd">
+
+            <TextView
+                android:text="Users"
+                android:paddingTop="40dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/baloo_paaji"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/user"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo_paaji"
+            android:layout_marginTop="30dp"
+            android:text="Unlock your earning potential with us, Making income simple and accessible."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

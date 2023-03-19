@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">UpLift</string>
+    <string name="first_slide_title">Find A Job Nearby</string>
+    <string name="two_slide_title">Free Online Classes</string>
+    <string name="three_slide_title">Multiple Treats awaiting you</string>
+    <string name="four_slide_title">Register now</string>
+
+    <string name="first_slide_desc">Looking for jobs? Afraid not ! Download now and find jobs easily</string>
+    <string name="two_slide_desc">Learn from anywhere, anytime with our education partner</string>
+    <string name="three_slide_desc">Starving? Here\'s some local food that you should definitely try on</string>
+    <string name="four_slide_desc">Your path to financial assistance</string>
+    <string name="title_activity_user_dashboard">UserDashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="home">Home</string>
+    <string name="market">Marketplace</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="layout">Layout</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="education">Education</string>
+    <string name="rewards">Rewards</string>
+    <string name="shop">Shop</string>
+    <string name="categories">Categories</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="job_portal">Job Portal</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

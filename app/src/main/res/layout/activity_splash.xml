@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bungee"
+        android:text="UPLIFT"
+        android:layout_marginBottom="-20dp"
+        android:textAlignment="center"
+        android:textColor="#0022FF"
+        android:textSize="36sp"
+        android:textAllCaps="true"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView2"
+        app:riv_corner_radius="20dp"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/splash_imgback"
+        android:outlineAmbientShadowColor="@color/white"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bungee"
+        android:text="YOUR PATH TO FINANCIAL STABILITY"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo_paaji"
+            android:text="Unlock your earning potential with us, Making income simple and accessible."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:fontFamily="@font/baloo_paaji"
+            android:text="Let's get started"
+            android:onClick="login"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
