@@ -32,8 +32,8 @@
     <li>
       <a href="#how-to-run-the-app">How To Run The App</a>
     </li>
-    <li><a href="#collaborator">Collaborator</a></li>
-    <li><a href="#Screenshots">Screenshots</a></li>
+    <li><a href="#contributer">Contributer</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
   </ol>
 </details>
 
@@ -119,21 +119,24 @@ git clone https://github.com/Melo04/UpLift.git
 
 <br/>
 
-<!-- COLLABORATOR -->
-## __Collaborator__
+<!-- CONTRIBUTER -->
+## __Contributer__
 Hey there, my name is Melody Koh Si Jie, a First year Computer Science student studying in Multimedia University Cyberjaya in Malaysia. 
 - Github [(Melo04)](https://github.com/Melo04)
 
+
 </br>
 
+<!-- SCREENSHOT -->
+## __Screenshots__
 Splash Screen               | Verify Identity             | Onboarding               | Onboarding
 ------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/96432831/226173528-4462a2b1-6365-427c-9044-119b4e8601a1.jpg"> | <img src="https://user-images.githubusercontent.com/96432831/226174727-59131742-b762-4597-9712-71fbae9ffe01.jpg" alt="splash screen">|<img src="https://user-images.githubusercontent.com/96432831/226173902-c267976a-d34f-42a5-899c-b607a1fe960c.jpg" alt="splash screen">|<img src="https://user-images.githubusercontent.com/96432831/226577649-34b95831-185e-4c11-80a1-598c2119a066.jpg" alt="splash screen">|
+<img src="https://user-images.githubusercontent.com/96432831/226173528-4462a2b1-6365-427c-9044-119b4e8601a1.jpg" width="200px"> | <img src="https://user-images.githubusercontent.com/96432831/226174727-59131742-b762-4597-9712-71fbae9ffe01.jpg" alt="splash screen" width="200px">|<img src="https://user-images.githubusercontent.com/96432831/226173902-c267976a-d34f-42a5-899c-b607a1fe960c.jpg" alt="splash screen" width="200px">|<img src="https://user-images.githubusercontent.com/96432831/226577649-34b95831-185e-4c11-80a1-598c2119a066.jpg" alt="splash screen" width="200px">|
 
 Marketplace               | Job Portal             | Education Platform               | Sign Up
 ------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/96432831/226570043-0315fd99-9516-496f-9d84-cbce42012762.jpg" alt="splash screen"> | <img src="https://user-images.githubusercontent.com/96432831/226569005-441cfd2f-f692-4b63-8e68-17a522fef776.jpg" alt="splash screen">|<img src="https://user-images.githubusercontent.com/96432831/226568431-ecb0ffbb-f22e-4765-8ba9-ebe67fb7da37.jpg" alt="splash screen">|<img src="https://user-images.githubusercontent.com/96432831/226173993-69d9c791-fd09-4527-ac36-dbae3cb2d501.jpg" alt="splash screen">|
+<img src="https://user-images.githubusercontent.com/96432831/226570043-0315fd99-9516-496f-9d84-cbce42012762.jpg" alt="splash screen" width="200px"> | <img src="https://user-images.githubusercontent.com/96432831/226580008-5fcb1c1d-7c89-4e94-91fb-379caaa92494.jpg" alt="splash screen" width="200px">|<img src="https://user-images.githubusercontent.com/96432831/226579882-3778d940-e8df-451f-ac4b-c12b5a636d71.jpg" alt="splash screen" width="200px">|<img src="https://user-images.githubusercontent.com/96432831/226173993-69d9c791-fd09-4527-ac36-dbae3cb2d501.jpg" alt="splash screen" width="200px">|
 
 Side Navigation               | Job Details             | Course Details               | Profile
 ------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/96432831/226578712-ba148539-e9f1-4a92-bb02-9b24d8c67933.jpg" alt="splash screen"> | <img src="https://user-images.githubusercontent.com/96432831/226578061-f071da84-7e51-41ed-ab7a-d515d9a6c991.jpg" alt="splash screen">|<img src="https://user-images.githubusercontent.com/96432831/226578210-27e89d90-ffe9-4909-878e-eb7d41e124ca.jpg" alt="splash screen">|<img src="https://user-images.githubusercontent.com/96432831/226578467-6f8f3e7b-6a2a-47b2-9f7a-84b706697c7a.jpg" alt="splash screen">|
+<img src="https://user-images.githubusercontent.com/96432831/226578712-ba148539-e9f1-4a92-bb02-9b24d8c67933.jpg" alt="splash screen" width="200px"> | <img src="https://user-images.githubusercontent.com/96432831/226578061-f071da84-7e51-41ed-ab7a-d515d9a6c991.jpg" alt="splash screen" width="200px">|<img src="https://user-images.githubusercontent.com/96432831/226578210-27e89d90-ffe9-4909-878e-eb7d41e124ca.jpg" alt="splash screen" width="200px">|<img src="https://user-images.githubusercontent.com/96432831/226578467-6f8f3e7b-6a2a-47b2-9f7a-84b706697c7a.jpg" alt="splash screen" width="200px">|
